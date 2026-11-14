@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Humanities Debate는 AI 지원자 3명과 한국어로 대화하고, 내 발언과 피드백을 돌아보는 Windows 인문학 토론 면접 연습 프로그램입니다.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Humanities Debate | 내 말로 연습하는 인문학 토론</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./home.css">
+  <script src="./config.js" defer></script>
+  <script src="./site.js" defer></script>
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="wordmark" href="./index.html" aria-label="Humanities Debate 홈"><span class="wordmark-symbol" aria-hidden="true">H.</span>Humanities Debate</a>
+      <nav aria-label="주요 메뉴">
+        <a href="#features">프로그램 소개</a>
+        <a href="./guide.html">설치 및 사용 방법</a>
+        <a href="#download" class="nav-download">다운로드</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">WINDOWS · 인문학 토론 면접 연습</p>
+        <h1 id="hero-title">혼자 준비해도,<br>토론은 <em>함께.</em></h1>
+        <p class="hero-description">서로 다른 관점의 AI 지원자 3명과 대화하세요.<br>내 목소리로 참여하고, 실제 발언을 바탕으로<br class="desktop-break"> 다음 연습에 필요한 피드백을 확인하세요.</p>
+        <div class="hero-actions">
+          <a class="site-button primary" href="#download">Windows 다운로드 안내 <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="./guide.html">처음 설치하시나요? <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="hero-note" data-download-summary data-ready-text="0.0.10 내부 테스트판 · 설치 전 파일 확인이 필요합니다.">0.0.10 내부 테스트판 · 공개 다운로드 준비 중</p>
+        <p class="unofficial">SK하이닉스 비공식 면접 연습 서비스<br>공식 채용 서비스나 공식 평가 도구가 아닙니다.</p>
+      </div>
+
+      <figure class="debate-preview" aria-label="설명을 위해 만든 4인 토론 화면 예시">
+        <div class="preview-heading"><span class="preview-label">토론 화면 예시</span><span class="preview-live">네 사람의 다른 관점</span></div>
+        <div class="preview-topic"><span>연습용 주제</span><h2>팀의 결정에 반대해도<br>함께 따라야 할까요?</h2></div>
+        <div class="preview-row"><div class="preview-person"><span class="avatar">나</span><strong>나<small>사용자</small></strong></div><p>새로운 문제가 보이면 다시 논의할 기회는 필요해요.</p></div>
+        <div class="preview-row"><div class="preview-person"><span class="avatar">지훈</span><strong>김지훈<small>AI · 논리형</small></strong></div><p>다시 논의할 기준을 정해 두면 실행도 덜 흔들릴 것 같습니다.</p></div>
+        <div class="preview-row is-current"><div class="preview-person"><span class="avatar">서연</span><strong>이서연<small>AI · 비판적 관점형</small></strong></div><p>그 기준 밖에서 생긴 문제는 누가 제기할 수 있나요?</p></div>
+        <div class="preview-row"><div class="preview-person"><span class="avatar">민수</span><strong>박민수<small>AI · 현실적 해결책형</small></strong></div><p>누구나 문제를 알리고, 팀이 계속할지 정하는 절차를 두죠.</p></div>
+        <figcaption>설명을 위해 작성한 가상 예시입니다. 실제 대화 기록이나 화면 캡처가 아닙니다.</figcaption>
+      </figure>
+    </section>
+
+    <section class="features-section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-intro"><p class="eyebrow">대화부터 복습까지</p><h2 id="features-title">생각을 말로 꺼내는<br>연습에 집중하세요.</h2><p>답안을 읽는 것에서 한 걸음 더.<br>상대의 의견을 듣고 내 생각을 이어가 보세요.</p></div>
+        <div class="feature-list">
+          <article class="feature-row"><span class="feature-number">01</span><div><h3>내 목소리로 대화에 참여</h3><p>Chrome 한국어 음성 인식으로 발언하세요. 말하기를 시작하면 AI는 기다립니다. 마이크를 쓰기 어렵다면 텍스트로 직접 입력할 수 있습니다.</p><span class="feature-tag">음성·텍스트 입력</span><span class="feature-tag">사용자 발언 우선</span></div></article>
+          <article class="feature-row"><span class="feature-number">02</span><div><h3>세 가지 관점과 의견 교환</h3><p>논리와 근거를 살피는 김지훈, 다른 관점을 제시하는 이서연, 현실적인 방안을 찾는 박민수와 연습합니다. 주제와 일반·심화 토론 수준을 선택할 수 있습니다.</p><span class="feature-tag">AI 지원자 3명</span><span class="feature-tag">주제 선택·직접 입력</span></div></article>
+          <article class="feature-row"><span class="feature-number">03</span><div><h3>내 발언을 근거로 돌아보기</h3><p>토론을 마치면 전체 발언을 다시 읽고 100점 만점 AI 피드백을 요청할 수 있습니다. 잘한 발언과 개선 예시를 확인하고, 같은 주제로 다시 연습해 보세요.</p><span class="feature-tag">전체 기록·백업</span><span class="feature-tag">일반·심층 분석</span><p class="feature-footnote">AI 평가에는 오류가 있을 수 있으며, 점수는 비공식 연습용 참고 지표입니다.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="account-section container" aria-labelledby="account-title">
+      <div><p class="eyebrow">사용 전 알아두세요</p><h2 id="account-title">내 계정으로 연결하고,<br>허용된 사용량으로 연습합니다.</h2></div>
+      <div class="account-copy"><p>설치한 앱에서 공식 <strong>Continue with ChatGPT</strong> 로그인과 구독 사용 동의를 진행합니다. 개발자의 API 키를 공유받거나 별도 API 키를 입력하는 방식이 아닙니다.</p><p>계정·구독·작업공간의 이용 자격과 사용량 제한이 적용됩니다. 무제한 사용이나 모든 계정의 이용을 보장하지 않습니다.</p><p class="muted">AI 토론·분석 내용은 OpenAI로 전송됩니다. Chrome 음성 인식은 온라인 음성 서비스를 사용할 수 있습니다. 홈페이지에서는 로그인이나 마이크 녹음을 진행하지 않습니다.</p><a class="text-link" href="./guide.html#step-login">로그인과 개인정보 안내 <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="download-section container" id="download" aria-labelledby="download-title">
+      <div class="download-panel">
+        <div class="download-intro"><p class="eyebrow">WINDOWS x64</p><h2 id="download-title">첫 토론을 준비하세요.</h2><p>Google Chrome 정식 버전, 인터넷 연결,<br>이용 가능한 본인 ChatGPT 계정이 필요합니다.</p><a href="./guide.html#step-security">설치 전 파일 확인 방법 <span aria-hidden="true">→</span></a></div>
+        <div class="download-card">
+          <span class="release-tag">0.0.10 · 내부 테스트판</span><h3>Windows 설치 파일</h3>
+          <p class="download-file"><code>HumanitiesDebateSIWC-Internal-0.0.10-x64.exe</code></p>
+          <p class="download-size">약 121.4 MB · 디지털 서명 없음</p>
+          <div class="guide-download" data-download-area><button type="button" disabled aria-describedby="guide-download-status">다운로드 준비 중</button><span id="guide-download-status">공식 다운로드 주소가 아직 등록되지 않았습니다.</span></div>
+          <p class="download-caution">현재는 내부 테스트판 안내입니다. 설치 파일의 안전성이나 모든 PC에서의 작동을 보장하지 않습니다. 출처·파일 이름·SHA-256·Defender 검사 결과를 확인한 뒤 설치 여부를 결정하세요.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="help-section container" id="installation" aria-labelledby="installation-title">
+      <div class="help-intro"><p class="eyebrow">처음부터 차근차근</p><h2 id="installation-title">설치 및 사용 방법</h2><p>Windows 프로그램 설치가 처음이어도 괜찮습니다.<br>파일 확인부터 기록 보기까지 8단계로 안내합니다.</p><a class="site-button" href="./guide.html">단계별 설치 안내 보기 <span aria-hidden="true">→</span></a></div>
+      <ol class="help-steps"><li><span>01—02</span><strong>파일 다운로드와 Chrome 확인</strong><p>확인된 출처에서 받고 실행 환경을 준비합니다.</p></li><li><span>03—04</span><strong>보안 확인 후 설치</strong><p>경고를 살피고 해시 비교와 Defender 검사를 진행합니다.</p></li><li><span>05—06</span><strong>개인 계정 연결과 마이크 허용</strong><p>직접 로그인하고 Windows·Chrome 권한을 확인합니다.</p></li><li><span>07—08</span><strong>토론 참여와 기록·피드백 확인</strong><p>주제를 고르고 발언한 뒤 내 대화를 돌아봅니다.</p></li></ol>
+    </section>
+
+    <section class="faq-link-section container" aria-labelledby="help-title"><div><h2 id="help-title">설치나 사용 중 막혔나요?</h2><p>Chrome·마이크·로그인·사용량·기록 저장·제거 방법을 확인하세요.</p></div><a class="text-link" href="./guide.html#guide-faq">문제 해결 FAQ <span aria-hidden="true">→</span></a></section>
+  </main>
+
+  <footer class="site-footer container"><div><strong>Humanities Debate</strong><p>SK하이닉스 공식 서비스 및 공식 평가 도구가 아닙니다.<br>주제와 참가자 구성은 면접 연습을 위한 설정입니다.</p><p>홈페이지에는 로그인·방문 분석·마이크 수집 기능이 없습니다.<br>공개 호스팅의 접속정보 처리는 호스팅 사업자의 정책을 따릅니다.</p></div><div class="footer-links"><a href="./guide.html">설치 및 사용 방법</a><a href="./guide.html#guide-faq">문제 해결 FAQ</a><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub 개인정보 처리 안내</a><span data-download-summary data-ready-text="내부 테스트판 안내 · 설치 전 파일 출처와 해시를 확인하세요.">내부 테스트판 안내 · 공개 다운로드 준비 중</span></div></footer>
+</body>
+</html>
