@@ -20,6 +20,8 @@
 .guide-steps h2 { display: flex; align-items: baseline; gap: 12px; font-size: 21px; line-height: 1.6; margin: 0 0 20px; letter-spacing: -.03em; }
 .guide-step-number { color: var(--color-orange-text); font-size: 14px; font-variant-numeric: tabular-nums; }
 .guide-step-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, .62fr); gap: 32px; align-items: start; }
+.guide-step-layout--text { grid-template-columns: minmax(0, 1fr); }
+.guide-step-layout--text > .guide-step-copy { max-width: 760px; }
 .guide-step-copy { min-width: 0; line-height: 1.9; word-break: keep-all; overflow-wrap: anywhere; }
 .guide-step-copy > p + p, .guide-step-copy > ol + p, .guide-detail > p + p { margin-top: 12px; }
 .guide-note { color: var(--color-muted); font-size: 13px; }
@@ -46,9 +48,6 @@
 .guide-hash { display: block; margin: 6px 0 12px; padding: 10px; background: var(--color-subtle); border-radius: 6px; word-break: break-all; user-select: all; }
 .guide-captures { display: grid; gap: 16px; min-width: 0; }
 .guide-screenshot { min-width: 0; margin: 0; border: 1px solid var(--color-border); border-radius: 10px; background: var(--color-surface); overflow: hidden; }
-.guide-screenshot-placeholder { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; min-height: 200px; aspect-ratio: 16 / 10; padding: 24px; text-align: center; background: var(--color-subtle); color: var(--color-muted); }
-.guide-screenshot-placeholder > span { font-size: 12px; border: 1px dashed var(--color-border-hover); border-radius: 5px; padding: 4px 9px; }
-.guide-screenshot-placeholder > p { font-size: 13px; line-height: 1.8; }
 .guide-screenshot img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
 .guide-screenshot figcaption { padding: 10px 14px; color: var(--color-muted); font-size: 11px; }
 .guide-faq { padding-top: 28px; border-top: 1px solid var(--color-border); scroll-margin-top: 20px; }
@@ -65,7 +64,6 @@
   .guide-toc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .guide-step-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   .guide-screenshot { max-width: 480px; width: 100%; }
-  .guide-screenshot-placeholder { min-height: 160px; }
 }
 @media (max-width: 480px) {
   .installation-guide { padding: 20px 16px; }
