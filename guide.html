@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Humanities Debate 설치 및 사용 방법. 파일 확인, ChatGPT 로그인, Chrome 마이크 설정과 문제 해결을 안내합니다.">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>설치 및 사용 방법 | Humanities Debate</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./base.css">
@@ -20,24 +20,25 @@
     <section class="guide-intro" aria-labelledby="guide-title"><p class="guide-eyebrow">처음 설치하는 분을 위한 안내</p>
 <h1 id="guide-title">설치 및 사용 방법</h1>
 <p>파일 확인부터 첫 토론까지, 아래 순서대로 따라 해보세요.<br/>각 단계의 화면 캡처는 준비 중이며, 실제 화면은 Windows와 Chrome 버전에 따라 다를 수 있습니다.</p>
-<div class="guide-requirements"><span>Windows x64</span><span>Google Chrome 정식 버전</span><span>인터넷·본인 ChatGPT 계정</span></div>
-<p class="guide-caution">현재 안내 대상은 서명되지 않은 내부 테스트판입니다. 공개 배포 준비가 완료되었다는 의미가 아니며, 설치 여부는 파일을 확인한 뒤 직접 결정하세요.</p>
+<div class="guide-requirements"><span>Windows x64</span><span>Google Chrome 정식 버전</span><span>인터넷·본인 ChatGPT Plus/Pro</span></div>
+<p class="guide-caution">프로그램은 무료 개인·비상업용이며 실제 AI 이용에는 적격 본인 ChatGPT Plus/Pro 구독이 필요합니다. 코드 서명이 없어 보안 경고가 나올 수 있습니다. 출처와 해시를 확인한 뒤 설치 여부를 직접 결정하세요.</p>
 </section>
 <nav class="guide-toc" aria-label="설치 및 사용 단계 바로가기"><a href="#step-download"><span>1</span>Windows 설치 파일 다운로드</a><a href="#step-chrome"><span>2</span>Google Chrome 정식 버전 확인</a><a href="#step-security"><span>3</span>Windows 보안 경고와 파일 확인</a><a href="#step-install"><span>4</span>설치 프로그램 실행</a><a href="#step-login"><span>5</span>내 ChatGPT 계정으로 연결</a><a href="#step-microphone"><span>6</span>Windows와 Chrome 마이크 허용</a><a href="#step-debate"><span>7</span>주제를 고르고 토론 시작</a><a href="#step-records"><span>8</span>토론 기록과 피드백 확인</a><a href="#guide-faq"><span>?</span>문제 해결 FAQ</a></nav>
 <ol class="guide-steps"><li id="step-download"><h2><span class="guide-step-number" aria-hidden="true">01</span>Windows 설치 파일 다운로드</h2>
 <div class="guide-step-layout"><div class="guide-step-copy"><p>이 홈페이지의 확인된 공식 다운로드 링크에서 Windows x64용 설치 파일을 받습니다. 파일을 저장할 위치를 물으면 ‘다운로드’ 폴더를 선택하세요.</p>
-<p>현재는 <strong>0.0.10 내부 테스트판</strong> 안내입니다. <span data-download-note>공개 다운로드 주소는 아직 등록되지 않았습니다.</span> 검색 광고나 출처를 모르는 재배포 링크에서 받지 마세요.</p>
+<p>현재는 <strong>v1.0.0 정식 배포판</strong> 안내입니다. <span data-download-note>아래 공식 GitHub Release에서 받을 수 있습니다.</span> 검색 광고나 출처를 모르는 재배포 링크에서 받지 마세요.</p>
 <div class="guide-download" data-download-area><button type="button" disabled="" aria-describedby="guide-download-status">다운로드 링크 준비 중</button><span id="guide-download-status">공식 주소를 확인한 뒤 다운로드를 제공합니다.</span></div>
 <dl class="guide-file-info"><div><dt>파일 이름</dt>
-<dd><code>HumanitiesDebateSIWC-Internal-0.0.10-x64.exe</code></dd>
+<dd><code>HumanitiesDebate-Setup-1.0.0-x64.exe</code></dd>
 </div>
 <div><dt>파일 크기</dt>
-<dd>약 121.4 MB · 121,382,636바이트</dd>
+<dd>약 121.6 MB / 116 MiB · 121,625,260바이트</dd>
 </div>
 <div><dt>디지털 서명</dt>
-<dd>없음 · 개인 개발 내부 테스트 프로그램</dd>
+<dd>없음 · 개인 개발 프로그램</dd>
 </div>
 </dl>
+<p class="guide-note">앱 독립 코드는 MIT, 포함된 SIWC DevKit과 수정 모듈은 별도 비상업 조건입니다. <a href="https://github.com/humanities-debate/humanities-debate/blob/main/LICENSE_SCOPE.md" target="_blank" rel="noopener noreferrer">라이선스 적용 범위</a>를 확인하세요.</p>
 <p class="guide-note">설치 파일이 절대적으로 안전하거나 모든 PC에서 작동한다고 보장하지 않습니다. 실행 전 3단계의 파일 확인을 진행하세요.</p>
 </div>
 <figure id="capture-download" class="guide-screenshot" aria-label="1단계 화면 캡처"><div class="guide-screenshot-placeholder"><span>화면 캡처 준비 중</span><p>공식 다운로드 페이지와 내려받은 설치 파일</p>
@@ -69,9 +70,9 @@
 <ol><li>Windows 시작 메뉴에서 ‘Windows PowerShell’을 검색해 여세요. 관리자 권한은 필요 없습니다.</li>
 <li>설치 파일이 ‘다운로드’ 폴더에 있다면 아래 명령을 복사해 붙여넣고 Enter를 누르세요. 파일을 실행하거나 변경하지 않고 확인만 합니다.</li>
 </ol>
-<pre tabindex="0" aria-label="SHA-256 확인 명령"><code>Get-FileHash -Algorithm SHA256 -LiteralPath &quot;$env:USERPROFILE\Downloads\HumanitiesDebateSIWC-Internal-0.0.10-x64.exe&quot; | Format-List</code></pre><p>다른 폴더에 받았다면 탐색기에서 파일을 Shift + 오른쪽 클릭해 ‘경로로 복사’를 선택하세요. 명령의 큰따옴표 안 경로를 그 파일의 전체 경로로 바꾸세요. 따옴표가 두 겹으로 들어가지 않게 확인합니다.</p>
+<pre tabindex="0" aria-label="SHA-256 확인 명령"><code>Get-FileHash -Algorithm SHA256 -LiteralPath &quot;$env:USERPROFILE\Downloads\HumanitiesDebate-Setup-1.0.0-x64.exe&quot; | Format-List</code></pre><p>다른 폴더에 받았다면 탐색기에서 파일을 Shift + 오른쪽 클릭해 ‘경로로 복사’를 선택하세요. 명령의 큰따옴표 안 경로를 그 파일의 전체 경로로 바꾸세요. 따옴표가 두 겹으로 들어가지 않게 확인합니다.</p>
 <p>출력에서 ‘Hash’ 옆의 값을 아래 값과 처음부터 끝까지 비교합니다. 영문 대문자·소문자는 달라도 됩니다. 오류가 나오면 파일 위치와 이름부터 다시 확인하세요.</p>
-<strong class="guide-small-label">0.0.10 설치 파일의 SHA-256</strong><code class="guide-hash">78e1aad2f871e8cd40cfb6fcb6f5a459d3956229c3008557574b0160fd1c929e</code><p class="guide-note">이 값은 위 파일 하나에만 해당합니다. 버전이나 파일이 바뀌면 새 해시가 필요합니다. 해시 일치는 파일의 동일성을 확인할 뿐, 안전성을 보장하지 않습니다. 비교할 값의 출처도 신뢰할 수 있어야 합니다.</p>
+<strong class="guide-small-label">v1.0.0 설치 파일의 SHA-256</strong><code class="guide-hash">be453654462e1e94f86e7cfd5bc177ef05324c923fc4a59a4dd6299e011ae0f0</code><p class="guide-note">이 값은 위 파일 하나에만 해당합니다. 버전이나 파일이 바뀌면 새 해시가 필요합니다. 해시 일치는 파일의 동일성을 확인할 뿐, 안전성을 보장하지 않습니다. 비교할 값의 출처도 신뢰할 수 있어야 합니다.</p>
 </details>
 <p class="guide-note">Defender 메뉴가 없다면 ‘Windows 보안 → 바이러스 및 위협 방지 → 검사 옵션 → 사용자 지정 검사’에서 다운로드 폴더를 검사하세요. 다른 백신을 사용하는 PC는 해당 제품의 검사 기능을 확인하세요.</p>
 <p><strong>확인 후 설치 여부는 사용자가 결정합니다.</strong> 출처가 불분명하거나 해시가 다르면 실행하지 마세요. 조직 정책으로 차단된 경우 관리자에게 문의하고, 확신이 없으면 설치를 취소하세요.</p>
@@ -86,8 +87,8 @@
 <li id="step-install"><h2><span class="guide-step-number" aria-hidden="true">04</span>설치 프로그램 실행</h2>
 <div class="guide-step-layout"><div class="guide-step-copy"><p>파일 확인을 마쳤고 설치하기로 결정했다면 설치 파일을 두 번 클릭하세요. 설치 화면에서 위치를 확인하고 ‘설치’를 누른 뒤 완료될 때까지 기다립니다.</p>
 <p>기본 설치 폴더를 권장합니다. 기존 버전이나 개인 문서가 들어 있는 폴더를 설치 위치로 선택하지 마세요. 실행 중인 구버전 앱은 먼저 종료합니다.</p>
-<p>설치 후 시작 메뉴 또는 바탕화면의 <strong>‘인문학 토론 음성 수정 내부판’</strong> 아이콘을 실행하세요. Chrome 앱 창과 로컬 서버가 자동으로 시작됩니다.</p>
-<p class="guide-note">아이콘 이름은 0.0.10 내부판 기준입니다. 설치 중 예상하지 못한 추가 프로그램이나 결제를 요구하면 중단하세요.</p>
+<p>설치 후 시작 메뉴 또는 바탕화면의 <strong>‘Humanities Debate’</strong> 아이콘을 실행하세요. Chrome 앱 창과 로컬 서버가 자동으로 시작됩니다.</p>
+<p class="guide-note">자동 업데이트는 지원하지 않습니다. 새 버전은 공식 Release에서 직접 확인하며, 업데이트 전에 기록을 백업하세요. 설치 중 예상하지 못한 추가 프로그램이나 결제를 요구하면 중단하세요.</p>
 </div>
 <figure id="capture-install" class="guide-screenshot" aria-label="4단계 화면 캡처"><div class="guide-screenshot-placeholder"><span>화면 캡처 준비 중</span><p>설치 위치 선택과 설치 완료 화면</p>
 </div>
@@ -98,7 +99,7 @@
 <li id="step-login"><h2><span class="guide-step-number" aria-hidden="true">05</span>내 ChatGPT 계정으로 연결</h2>
 <div class="guide-step-layout"><div class="guide-step-copy"><p>처음 실행하면 <strong>Continue with ChatGPT</strong>를 누르세요. 열린 공식 OpenAI 로그인 화면에서 <strong>본인의 계정과 작업공간</strong>을 선택하고 앱의 구독 사용 동의를 읽습니다.</p>
 <p>주소가 공식 OpenAI 인증 사이트(<code>https://auth.openai.com</code>)인지 확인한 뒤 로그인하세요. 동의하고 연결이 완료되면 토론 시작 화면으로 자동 이동합니다. 이미 연결된 계정은 다음 실행 때 바로 열립니다.</p>
-<p>앱은 동의받은 본인 계정의 허용 사용량으로 AI를 요청합니다. 별도의 API 키를 입력할 필요는 없습니다. 이용 가능 여부와 한도는 계정·구독·작업공간 정책에 따라 달라질 수 있습니다.</p>
+<p>앱은 이용 자격이 있는 본인 ChatGPT Plus/Pro 구독과 동의를 바탕으로 본인 계정의 허용 사용량으로 AI를 요청합니다. 별도의 API 키를 입력할 필요는 없습니다. 이용 가능 여부와 한도는 계정·구독·작업공간 정책에 따라 달라질 수 있습니다.</p>
 <p class="guide-note">비밀번호나 인증 토큰을 개발자·다른 사용자에게 보내지 마세요. 로그인 화면과 계정 정보가 보이는 화면 캡처도 공유하지 마세요.</p>
 <p class="guide-source"><a href="https://developers.openai.com/siwc/token-sharing-open-source" target="_blank" rel="noopener noreferrer">OpenAI 공식 로그인·구독 사용 안내<span class="guide-sr-only"> (새 창)</span></a></p>
 </div>
@@ -176,10 +177,10 @@
 <details><summary>프로그램을 종료하거나 제거하려면 어떻게 하나요?</summary>
 <p>진행 중인 토론을 종료·저장한 뒤 Chrome 앱 메인 창의 X 또는 ‘설정 → 프로그램 완전 종료’를 사용하세요. 설정 패널의 ‘닫기’는 프로그램 종료가 아닙니다.</p>
 <p>제거 전 필요한 기록을 백업하세요. 계정 연결도 해제하려면 앱 설정에서 먼저 로그아웃하고, 원격 해제에 실패했다는 안내가 나오면 ChatGPT의 연결·사용량 관리에서도 확인하세요.</p>
-<p>Windows 11에서는 ‘설정 → 앱 → 설치된 앱’에서 ‘인문학 토론 음성 수정 내부판’을 찾아 ‘제거’를 선택합니다. Windows 10에서는 ‘앱 및 기능’에 있습니다. 현재 설치판은 제거해도 토론 기록을 자동 삭제하지 않습니다. 프로그램 제거와 계정 연결 해제는 별개입니다.</p>
+<p>Windows 11에서는 ‘설정 → 앱 → 설치된 앱’에서 ‘Humanities Debate’을 찾아 ‘제거’를 선택합니다. Windows 10에서는 ‘앱 및 기능’에 있습니다. 현재 설치판은 제거해도 토론 기록을 자동 삭제하지 않습니다. 프로그램 제거와 계정 연결 해제는 별개입니다.</p>
 </details>
 </section>
-<div class="guide-bottom"><span>안내 기준: 0.0.10 Chrome 내부 테스트판 · 2026.11.14</span><a href="#guide-top">맨 위로</a></div>
+<div class="guide-bottom"><span>안내 기준: v1.0.0 정식 배포판 · 2026.11.16</span><a href="#guide-top">맨 위로</a></div>
 
     <footer class="guide-footer">SK하이닉스 공식 서비스 또는 공식 평가 도구가 아닌 비공식 면접 연습 프로그램입니다.</footer>
   </main>
