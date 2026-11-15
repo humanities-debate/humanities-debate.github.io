@@ -25,7 +25,7 @@
     if (status) status.textContent = `다운로드 출처: ${url.hostname} · 파일 이름과 해시를 확인하세요.`
   })
   document.querySelectorAll('[data-download-note]').forEach(node => {
-    node.textContent = '아래 공식 다운로드 링크에서 파일을 받을 수 있습니다.'
+    node.textContent = '가이드 상단의 공식 다운로드 버튼에서 파일을 받을 수 있습니다.'
   })
   document.querySelectorAll('[data-download-summary]').forEach(node => {
     node.textContent = node.dataset.readyText

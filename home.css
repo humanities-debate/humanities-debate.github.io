@@ -23,6 +23,15 @@
 .text-link:hover { text-decoration: underline; }
 .text-link > span { display: inline-block; margin-left: 12px; }
 .hero-note { color: var(--color-muted); font-size: 11px; }
+.download-requirements { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 14px; }
+.download-requirements > li { display: flex; align-items: flex-start; gap: 10px; min-width: 0; }
+.download-requirements svg { flex-shrink: 0; color: var(--color-orange-text); margin-top: 3px; }
+.download-requirements strong { display: block; color: var(--color-text); font-size: 14px; line-height: 1.6; }
+.download-requirements p, .requirements-note { color: var(--color-muted); font-size: 13px; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
+.download-requirements a { text-decoration: underline; }
+.requirements-note { margin-top: 12px; }
+.hero-requirements { gap: 10px; }
+.hero-copy > .requirements-note { margin-bottom: 10px; }
 .unofficial { margin-top: 32px; padding-left: 12px; border-left: 2px solid var(--color-border-hover); color: var(--color-muted); font-size: 11px; line-height: 1.8; }
 .debate-preview { min-width: 0; margin: 0; border: 1px solid #DDE0E6; border-radius: 12px; background: var(--color-surface); overflow: hidden; }
 .preview-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 20px; border-bottom: 1px solid var(--color-border); font-size: 10px; }

@@ -20,14 +20,21 @@
     <section class="guide-intro" aria-labelledby="guide-title"><p class="guide-eyebrow">처음 설치하는 분을 위한 안내</p>
 <h1 id="guide-title">설치 및 사용 방법</h1>
 <p>파일 확인부터 첫 토론까지, 아래 순서대로 따라 해보세요.<br/>실제 화면은 Windows와 Chrome 버전에 따라 다를 수 있습니다.</p>
-<div class="guide-requirements"><span>Windows x64</span><span>Google Chrome 정식 버전</span><span>인터넷·본인 ChatGPT Plus/Pro</span></div>
-<p class="guide-caution">프로그램은 무료 개인·비상업용이며 실제 AI 이용에는 적격 본인 ChatGPT Plus/Pro 구독이 필요합니다. 코드 서명이 없어 보안 경고가 나올 수 있습니다. 출처와 해시를 확인한 뒤 설치 여부를 직접 결정하세요.</p>
+<section class="guide-preflight" id="before-download" aria-labelledby="preflight-title" tabindex="-1">
+<h2 id="preflight-title">다운로드 전 확인해주세요</h2>
+<ul class="preflight-requirements" aria-label="필수 이용 조건"><li><strong>Windows x64 PC</strong></li><li><strong><a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Google Chrome 정식 버전</a></strong></li><li><strong>본인 ChatGPT Plus/Pro 구독</strong></li><li><strong>인터넷 연결 및 마이크 사용 권한</strong></li></ul>
+<p>프로그램 이용료는 <strong>무료</strong>입니다. 개인 ChatGPT 계정의 이용 한도가 적용되며 Plus/Pro도 사용량 제한이 있습니다. 무료·Go 계정은 지원 미검증입니다.</p>
+<p>본인 계정으로 공식 OpenAI 로그인 화면에서 직접 인증합니다. 개발자에게 ChatGPT 비밀번호를 전달할 필요가 없습니다.</p>
+<p class="preflight-security"><strong>설치 전 보안 확인:</strong> 디지털 서명이 없어 ‘Windows의 PC 보호’ 경고가 나올 수 있습니다. 공식 GitHub Release의 파일인지 확인하고, 파일 이름·SHA-256을 비교한 뒤 신뢰할 때만 실행하세요. Defender가 위협을 탐지하면 실행하지 마세요. <a href="#step-security">실제 경고 화면·파일 확인 방법</a></p>
+<div class="guide-download" data-download-area><button type="button" disabled aria-describedby="guide-download-status">다운로드 준비 중</button><span id="guide-download-status">공식 다운로드 주소를 확인하고 있습니다.</span></div>
+<p class="guide-note">Windows x64 전용 · macOS·모바일 미지원 · 무료 개인·비상업용</p>
+</section>
 </section>
 <nav class="guide-toc" aria-label="설치 및 사용 단계 바로가기"><a href="#step-download"><span>1</span>Windows 설치 파일 다운로드</a><a href="#step-chrome"><span>2</span>Google Chrome 정식 버전 확인</a><a href="#step-security"><span>3</span>Windows 보안 경고와 파일 확인</a><a href="#step-install"><span>4</span>설치 프로그램 실행</a><a href="#step-login"><span>5</span>내 ChatGPT 계정으로 연결</a><a href="#step-microphone"><span>6</span>Windows와 Chrome 마이크 허용</a><a href="#step-debate"><span>7</span>주제를 고르고 토론 시작</a><a href="#step-records"><span>8</span>토론 기록과 피드백 확인</a><a href="#guide-faq"><span>?</span>문제 해결 FAQ</a></nav>
 <ol class="guide-steps"><li id="step-download"><h2><span class="guide-step-number" aria-hidden="true">01</span>Windows 설치 파일 다운로드</h2>
 <div class="guide-step-layout guide-step-layout--text"><div class="guide-step-copy"><p>이 홈페이지의 확인된 공식 다운로드 링크에서 Windows x64용 설치 파일을 받습니다. 파일을 저장할 위치를 물으면 ‘다운로드’ 폴더를 선택하세요.</p>
-<p>현재는 <strong>v1.0.0 정식 배포판</strong> 안내입니다. <span data-download-note>아래 공식 GitHub Release에서 받을 수 있습니다.</span> 검색 광고나 출처를 모르는 재배포 링크에서 받지 마세요.</p>
-<div class="guide-download" data-download-area><button type="button" disabled="" aria-describedby="guide-download-status">다운로드 링크 준비 중</button><span id="guide-download-status">공식 주소를 확인한 뒤 다운로드를 제공합니다.</span></div>
+<p>현재는 <strong>v1.0.0 정식 배포판</strong> 안내입니다. <span data-download-note>페이지 상단의 공식 다운로드 버튼에서 받을 수 있습니다.</span> 검색 광고나 출처를 모르는 재배포 링크에서 받지 마세요.</p>
+<p><a href="#before-download">페이지 상단에서 필수 조건을 확인하고 다운로드</a>할 수 있습니다.</p>
 <dl class="guide-file-info"><div><dt>파일 이름</dt>
 <dd><code>HumanitiesDebate-Setup-1.0.0-x64.exe</code></dd>
 </div>
@@ -46,13 +53,14 @@
 <li id="step-chrome"><h2><span class="guide-step-number" aria-hidden="true">02</span>Google Chrome 정식 버전 확인</h2>
 <div class="guide-step-layout guide-step-layout--text"><div class="guide-step-copy"><p>Windows 시작 메뉴에서 <strong>Google Chrome</strong>을 검색해 실행해 보세요. Edge나 Chromium 대신 Google이 배포하는 정식 Chrome을 사용합니다.</p>
 <p>없다면 <a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Google 공식 Chrome 다운로드<span class="guide-sr-only"> (새 창)</span></a>에서 설치하세요. 이미 있다면 Chrome 메뉴의 ‘도움말 → Chrome 정보’에서 업데이트를 확인합니다.</p>
+<p>Chrome 베타·개발자 버전만 설치한 환경은 정상 동작을 보장하지 않습니다. Google Chrome 정식 버전을 준비해주세요.</p>
 <p class="guide-note">인터넷 연결이 필요합니다. 토론 앱 사용을 위해 VS Code, Node.js나 개발용 터미널을 따로 설치할 필요는 없습니다.</p>
 </div>
 </div>
 </li>
 <li id="step-security"><h2><span class="guide-step-number" aria-hidden="true">03</span>Windows 보안 경고와 파일 확인</h2>
-<div class="guide-step-layout"><div class="guide-step-copy"><p>현재 설치 파일은 코드 서명이 없어 SmartScreen에서 ‘Windows의 PC 보호’ 같은 경고를 표시할 수 있습니다. <strong>경고를 무조건 무시하거나 보안 기능을 끄지 마세요.</strong></p>
-<ol class="guide-checklist"><li><strong>출처 확인.</strong> 이 홈페이지의 공식 다운로드 주소에서 받은 파일인지 확인하세요. 파일 이름이 같다는 이유만으로 믿지 마세요.</li>
+<div class="guide-step-layout"><div class="guide-step-copy"><p>현재 설치 파일은 디지털 서명이 없어 SmartScreen에서 ‘Windows의 PC 보호’ 같은 경고를 표시할 수 있습니다. 경고만으로 악성코드라고 단정할 수는 없으며, 안전하다는 뜻도 아닙니다. <strong>경고를 무조건 무시하거나 보안 기능을 끄지 마세요.</strong></p>
+<ol class="guide-checklist"><li><strong>출처 확인.</strong> 이 홈페이지가 연결한 <a href="https://github.com/humanities-debate/humanities-debate/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">공식 GitHub Release</a>에서 받은 파일인지 확인하세요. 파일 이름이 같다는 이유만으로 믿지 마세요.</li>
 <li><strong>파일 이름·게시자 확인.</strong> 탐색기에서 위 파일 이름과 <code>.exe</code> 확장자를 비교하세요. 경고의 게시자도 확인하세요. 현재 무서명판은 ‘알 수 없는 게시자’로 나올 수 있으며, 이것은 신뢰를 증명하지 않습니다. 다른 이름이나 예상하지 못한 게시자가 보이면 실행을 멈추세요.</li>
 <li><strong>SHA-256 비교.</strong> 아래 방법으로 파일이 이 안내의 설치 파일과 같은지 확인하세요. 한 글자라도 다르면 실행하지 마세요.</li>
 <li><strong>Microsoft Defender 검사.</strong> 설치 파일을 마우스 오른쪽으로 클릭하고 ‘추가 옵션 표시 → Microsoft Defender로 검사’를 선택하세요. 위협이 발견되면 실행하지 마세요.</li>
@@ -100,7 +108,7 @@
 <li id="step-login"><h2><span class="guide-step-number" aria-hidden="true">05</span>내 ChatGPT 계정으로 연결</h2>
 <div class="guide-step-layout guide-step-layout--text"><div class="guide-step-copy"><p>처음 실행하면 <strong>Continue with ChatGPT</strong>를 누르세요. 열린 공식 OpenAI 로그인 화면에서 <strong>본인의 계정과 작업공간</strong>을 선택하고 앱의 구독 사용 동의를 읽습니다.</p>
 <p>주소가 공식 OpenAI 인증 사이트(<code>https://auth.openai.com</code>)인지 확인한 뒤 로그인하세요. 동의하고 연결이 완료되면 토론 시작 화면으로 자동 이동합니다. 이미 연결된 계정은 다음 실행 때 바로 열립니다.</p>
-<p>앱은 이용 자격이 있는 본인 ChatGPT Plus/Pro 구독과 동의를 바탕으로 본인 계정의 허용 사용량으로 AI를 요청합니다. 별도의 API 키를 입력할 필요는 없습니다. 이용 가능 여부와 한도는 계정·구독·작업공간 정책에 따라 달라질 수 있습니다.</p>
+<p>앱은 이용 자격이 있는 본인 ChatGPT Plus/Pro 구독과 동의를 바탕으로 본인 계정의 허용 사용량으로 AI를 요청합니다. 별도의 API 키를 입력할 필요는 없습니다. 무료·Go 계정은 지원 미검증이며, Plus/Pro도 계정·구독·작업공간의 사용량 제한이 적용됩니다.</p>
 <p class="guide-note">비밀번호나 인증 토큰을 개발자·다른 사용자에게 보내지 마세요. 로그인 화면과 계정 정보가 보이는 화면 캡처도 공유하지 마세요.</p>
 <p class="guide-source"><a href="https://developers.openai.com/siwc/token-sharing-open-source" target="_blank" rel="noopener noreferrer">OpenAI 공식 로그인·구독 사용 안내<span class="guide-sr-only"> (새 창)</span></a></p>
 </div>
@@ -138,7 +146,7 @@
 <section class="guide-faq" id="guide-faq" aria-labelledby="guide-faq-title"><p class="guide-eyebrow">막히는 부분이 있나요?</p>
 <h2 id="guide-faq-title">문제 해결 FAQ</h2>
 <details><summary>Chrome을 찾을 수 없다고 나와요.</summary>
-<p><a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Google 공식 사이트<span class="guide-sr-only"> (새 창)</span></a>에서 정식 Chrome을 설치하고 한 번 실행한 뒤 앱을 다시 여세요. Edge나 포터블 Chromium은 대신 사용할 수 없습니다. 학교·회사 PC에서 설치가 막혔다면 관리자에게 문의하세요.</p>
+<p><a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Google 공식 사이트<span class="guide-sr-only"> (새 창)</span></a>에서 정식 Chrome을 설치하고 한 번 실행한 뒤 앱을 다시 여세요. 베타·개발자 버전만 설치한 환경은 정상 동작을 보장하지 않습니다. Edge나 포터블 Chromium은 대신 사용할 수 없습니다. 학교·회사 PC에서 설치가 막혔다면 관리자에게 문의하세요.</p>
 </details>
 <details id="faq-microphone"><summary>마이크가 인식되지 않거나 음성이 글자로 나오지 않아요.</summary>
 <p>먼저 Windows ‘소리 → 입력’에서 마이크 입력이 감지되는지 확인하세요. 입력이 없으면 연결·음소거·입력 장치를 점검합니다. 입력은 되는데 글자로 나오지 않으면 <a href="#step-microphone">6단계의 두 권한</a>과 인터넷 연결을 확인하세요.</p>
@@ -146,6 +154,7 @@
 <p>‘마이크 다시 켜기’로 수동 복구할 수 있습니다. 계속 실패하면 ‘텍스트 직접 입력’을 사용하세요. 음성 인식은 브라우저 서비스 장애나 네트워크에 영향을 받을 수 있으며, 재시도로 반드시 해결되지는 않습니다. 확정된 문장이나 기록을 삭제하며 복구하지 마세요.</p>
 </details>
 <details><summary>ChatGPT 로그인이 되지 않아요.</summary>
+<p>AI 토론·피드백에는 본인 ChatGPT Plus/Pro 구독이 필요합니다. 무료·Go 계정은 지원 미검증이며, Plus/Pro도 무제한 이용은 아닙니다.</p>
 <p>인터넷과 PC 날짜·시간을 확인하고, 공식 OpenAI 인증 페이지에서 본인 계정·작업공간 및 구독 사용 동의를 확인하세요. 앱의 ‘설정 → 연결 오류 복구’에서 다시 시도할 수 있습니다. 인증이 만료되었다는 안내가 나오면 공식 로그인으로 다시 연결하세요.</p>
 <p>이용 자격이나 작업공간 정책으로 거부된 경우 로그인을 반복해도 해결되지 않을 수 있습니다. 다른 계정으로 연결하려면 ‘설정 → 다른 계정 추가’를 사용하세요. 비밀번호·토큰·인증 폴더를 전달하거나 직접 편집하지 마세요.</p>
 </details>
