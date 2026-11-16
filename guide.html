@@ -30,6 +30,7 @@
 <p class="guide-note">Windows x64 전용 · macOS·모바일 미지원 · 무료 개인·비상업용</p>
 </section>
 </section>
+<p><a href="#privacy-data">개인정보·음성·기록 처리와 삭제 방법</a></p>
 <nav class="guide-toc" aria-label="설치 및 사용 단계 바로가기"><a href="#step-download"><span>1</span>Windows 설치 파일 다운로드</a><a href="#step-chrome"><span>2</span>Google Chrome 정식 버전 확인</a><a href="#step-security"><span>3</span>Windows 보안 경고와 파일 확인</a><a href="#step-install"><span>4</span>설치 프로그램 실행</a><a href="#step-login"><span>5</span>내 ChatGPT 계정으로 연결</a><a href="#step-microphone"><span>6</span>Windows와 Chrome 마이크 허용</a><a href="#step-debate"><span>7</span>주제를 고르고 토론 시작</a><a href="#step-records"><span>8</span>토론 기록과 피드백 확인</a><a href="#guide-faq"><span>?</span>문제 해결 FAQ</a></nav>
 <ol class="guide-steps"><li id="step-download"><h2><span class="guide-step-number" aria-hidden="true">01</span>Windows 설치 파일 다운로드</h2>
 <div class="guide-step-layout guide-step-layout--text"><div class="guide-step-copy"><p>이 홈페이지의 확인된 공식 다운로드 링크에서 Windows x64용 설치 파일을 받습니다. 파일을 저장할 위치를 물으면 ‘다운로드’ 폴더를 선택하세요.</p>
@@ -173,6 +174,19 @@
 <p>제거 전 필요한 기록을 백업하세요. 계정 연결도 해제하려면 앱 설정에서 먼저 로그아웃하고, 원격 해제에 실패했다는 안내가 나오면 ChatGPT의 연결·사용량 관리에서도 확인하세요.</p>
 <p>Windows 11에서는 ‘설정 → 앱 → 설치된 앱’에서 ‘Humanities Debate’을 찾아 ‘제거’를 선택합니다. Windows 10에서는 ‘앱 및 기능’에 있습니다. 현재 설치판은 제거해도 토론 기록을 자동 삭제하지 않습니다. 프로그램 제거와 계정 연결 해제는 별개입니다.</p>
 </details>
+</section>
+<section class="guide-faq" id="privacy-data" aria-labelledby="privacy-title">
+<p class="guide-eyebrow">내 정보는 어떻게 처리되나요?</p>
+<h2 id="privacy-title">개인정보·음성·기록 안내</h2>
+<p><strong>외부로 전송되는 정보.</strong> 공식 OpenAI 로그인 화면에서 직접 인증합니다. 앱이나 개발자에게 ChatGPT 비밀번호를 전달하지 마세요. 로그인에는 계정 연결 정보와 이 앱에서 임의로 생성한 호스트 식별자가 사용되며, 재로그인 시 저장된 이메일이 로그인 힌트로 전달될 수 있습니다. 본인 Plus/Pro 구독의 이용 자격·동의·한도가 적용됩니다.</p>
+<p>AI 발언을 요청하면 주제·상황·쟁점과 대화 맥락을, 피드백을 요청하면 분석 대상 토론의 발언 원문·순서·발언 ID 등을 OpenAI로 전송합니다. 요청의 <code>store: false</code> 설정은 OpenAI의 모든 처리·보관이 없거나 즉시 삭제된다는 뜻이 아닙니다. 회사 기밀, 비밀번호, 인증 토큰, 타인의 개인정보는 입력하지 마세요.</p>
+<p><strong>마이크 음성.</strong> Chrome 음성 인식은 Google 등 브라우저 제공자의 외부 온라인 서비스를 사용할 수 있습니다. 앱은 별도의 음성 원본 녹음 파일을 저장하지 않지만, 인식되어 확정한 텍스트는 토론 기록에 포함됩니다. 외부 음성 처리를 원하지 않으면 텍스트로 참여할 수 있습니다.</p>
+<p><strong>내 PC에 저장되는 정보.</strong> 토론 원문과 피드백은 <code>%APPDATA%\HumanitiesDebateSIWC\profiles</code> 아래 전용 Chrome 프로필에 저장됩니다. Windows 사용자별 경로와 검증된 ChatGPT 계정·등록별 저장 영역을 사용합니다. 자동 클라우드 동기화 기능은 없습니다. 내보낸 백업은 Chrome의 다운로드 위치에 저장되는 JSON 파일이며, 기록과 백업에는 별도 암호화를 적용하지 않습니다.</p>
+<p>인증 토큰은 Windows 사용자 보호 기능(DPAPI)을 사용하는 암호화 저장소에 보관하며 Chrome 화면이나 웹 저장소에 전달하지 않습니다. 이 보호는 같은 Windows 사용자 권한으로 실행되는 악성 프로그램까지 차단하는 것은 아닙니다. 계정 표시용 이메일·등록 정보도 로컬에 보관됩니다. 개인 Windows 계정과 PC 잠금을 사용하고 인증 폴더를 공유하지 마세요.</p>
+<p><strong>기록과 백업 삭제.</strong> 앱의 ‘과거 기록’에서 해당 토론의 ‘삭제’를 누르거나, 상세 화면에서 ‘이 기록 삭제’를 선택하세요. 해당 토론과 함께 저장된 피드백이 삭제됩니다. 다른 계정의 기록이나 이미 내보낸 백업은 삭제되지 않습니다. 백업은 탐색기에서 본인이 저장한 <code>humanities-debate-backup-날짜.json</code> 파일을 확인해 별도로 삭제하세요. 휴지통이나 다른 곳에 복사한 백업에도 사본이 남을 수 있습니다. 앱에서 삭제해도 외부 서비스로 이미 보낸 정보가 함께 삭제되는 것은 아닙니다.</p>
+<p><strong>로그아웃과 프로그램 제거.</strong> ‘이 연결 로그아웃’은 선택한 계정의 원격 세션 철회를 시도하고 로컬 토큰을 지웁니다. 실패 안내가 나오면 ChatGPT 설정에서 연결도 확인하세요. 토론 기록과 재로그인용 계정·등록 연결 정보는 남으며, 다른 저장된 계정까지 일괄 로그아웃하지 않습니다. 프로그램 제거도 기록·인증 데이터나 내려받은 백업을 자동 삭제하지 않습니다. PC를 다른 사람에게 넘기려면 각 연결을 로그아웃하고 필요한 기록의 백업·삭제를 먼저 진행하세요. 데이터 폴더를 통째로 공유하거나 확인 없이 지우지 마세요.</p>
+<p><strong>홈페이지와 다운로드.</strong> 앱에서 개발자 서버로 토론·음성·인증정보를 수집하는 기능은 없습니다. 홈페이지에는 방문 분석·로그인·마이크 수집 기능이 없으며, 다운로드 횟수만 공개 GitHub API에서 조회합니다. GitHub Pages 접속과 Releases 다운로드·API 조회에는 GitHub의 정보 처리 정책이 적용됩니다. 다운로드 횟수는 고유 사용자 수가 아닙니다.</p>
+<p class="guide-source"><a href="https://developers.openai.com/siwc/token-sharing-open-source/profiles-and-sessions" target="_blank" rel="noopener noreferrer">OpenAI 계정·세션 안내</a> · <a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener noreferrer">Google 개인정보 처리 안내</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub 개인정보 처리 안내</a></p>
 </section>
 <div class="guide-bottom"><span>안내 기준: v1.0.0 정식 배포판 · 2026.11.16</span><a href="#guide-top">맨 위로</a></div>
 
