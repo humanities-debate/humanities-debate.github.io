@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./home.css">
   <script src="./config.js" defer></script>
   <script src="./site.js" defer></script>
+  <script src="./demo.js" defer></script>
 </head>
 <body class="home-page">
   <a class="skip-link" href="#main">본문 바로가기</a>
@@ -66,6 +67,21 @@
           <article class="feature-row"><span class="feature-number">03</span><div><h3>내 발언을 근거로 돌아보기</h3><p>토론을 마치면 전체 발언을 다시 읽고 100점 만점 AI 피드백을 요청할 수 있습니다. 잘한 발언과 개선 예시를 확인하고, 같은 주제로 다시 연습해 보세요.</p><span class="feature-tag">전체 기록·백업</span><span class="feature-tag">일반·심층 분석</span><p class="feature-footnote">AI 평가에는 오류가 있을 수 있으며, 점수는 비공식 연습용 참고 지표입니다.</p></div></article>
         </div>
       </div>
+    </section>
+
+    <section class="demo-section container" id="demo" aria-labelledby="demo-title">
+      <div class="demo-intro"><p class="eyebrow">약 1분으로 살펴보기</p><h2 id="demo-title">실제 프로그램 시연</h2><p>AI 3명과의 실제 토론, 사용자 질문, 토론 종료 후 100점 피드백까지 확인해보세요.</p></div>
+      <figure class="demo-figure">
+        <div class="demo-player">
+          <video id="program-demo" controls playsinline preload="none" width="1920" height="1080" poster="./assets/demo-poster.png" aria-label="Humanities Debate 실제 프로그램 시연 영상" aria-describedby="demo-caption" tabindex="0">
+            <source src="./assets/Humanities-Debate-v1.0.0-demo.mp4" type="video/mp4">
+            이 브라우저에서는 영상을 재생할 수 없습니다. <a href="./assets/Humanities-Debate-v1.0.0-demo.mp4">시연 영상 파일 열기</a>
+          </video>
+          <button class="demo-play" type="button" aria-label="실제 프로그램 시연 영상 재생" aria-controls="program-demo" hidden><span aria-hidden="true">▶</span></button>
+        </div>
+        <figcaption id="demo-caption">실제 앱 화면을 녹화한 68초 영상입니다. 대기 구간은 편집했으며, 사용자 발언은 텍스트 입력으로 진행했습니다. 영상은 무음이며 화면 안에 설명 자막이 포함되어 있습니다.</figcaption>
+      </figure>
+      <p class="demo-status" data-demo-status role="status"></p>
     </section>
 
     <section class="account-section container" aria-labelledby="account-title">
