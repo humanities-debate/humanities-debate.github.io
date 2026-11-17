@@ -33,24 +33,11 @@
 .hero-requirements { gap: 10px; }
 .hero-copy > .requirements-note { margin-bottom: 10px; }
 .unofficial { margin-top: 32px; padding-left: 12px; border-left: 2px solid var(--color-border-hover); color: var(--color-muted); font-size: 11px; line-height: 1.8; }
-.debate-preview { min-width: 0; margin: 0; border: 1px solid #DDE0E6; border-radius: 12px; background: var(--color-surface); overflow: hidden; }
-.preview-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 20px; border-bottom: 1px solid var(--color-border); font-size: 10px; }
-.preview-label { font-weight: 700; color: var(--color-text); }
-.preview-live { color: var(--color-muted); }
-.preview-live::before { content: ''; display: inline-block; width: 5px; height: 5px; background: var(--color-secondary); border-radius: 50%; margin-right: 6px; vertical-align: middle; }
-.preview-topic { padding: 17px 20px; background: #FAFBFC; }
-.preview-topic > span { color: var(--color-muted); font-size: 10px; }
-.preview-topic h2 { font-size: 17px; line-height: 1.6; margin: 3px 0 0; letter-spacing: -.02em; }
-.preview-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); border-top: 1px solid var(--color-border); min-height: 81px; }
-.preview-person { display: flex; align-items: center; gap: 9px; padding: 13px 12px 13px 18px; border-right: 1px solid var(--color-border); }
-.avatar { display: grid; place-items: center; width: 29px; height: 29px; border-radius: 50%; background: var(--color-subtle); color: var(--color-muted); font-size: 10px; flex-shrink: 0; }
-.preview-person strong { font-size: 12px; white-space: nowrap; }
-.preview-person small { display: block; color: var(--color-muted); font-size: 8px; font-weight: 400; margin-top: 2px; }
-.preview-row > p { display: flex; align-items: center; padding: 14px 17px; font-size: 12px; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
-.preview-row.is-current { border-left: 3px solid var(--color-primary); background: #FFFAFB; }
-.is-current .preview-person { padding-left: 15px; }
-.is-current .avatar { background: var(--color-red-soft); color: var(--color-red-hover); }
-.debate-preview figcaption { padding: 11px 18px; border-top: 1px solid var(--color-border); font-size: 9px; line-height: 1.7; color: var(--color-muted); }
+.hero-demo { min-width: 0; margin: 0; border: 1px solid #DDE0E6; border-radius: 12px; background: var(--color-surface); overflow: hidden; scroll-margin-top: 108px; }
+.hero-demo figcaption { padding: 16px 18px; border-top: 1px solid var(--color-border); color: var(--color-muted); font-size: 12px; line-height: 1.9; word-break: keep-all; }
+.hero-demo figcaption strong { display: block; color: var(--color-text); font-size: 14px; margin-bottom: 6px; }
+.hero-demo figcaption > span { display: block; }
+.hero-demo .demo-notice { margin-top: 7px; font-size: 11px; }
 .features-section { background: var(--color-surface); padding-block: 72px; border-block: 1px solid var(--color-border); scroll-margin-top: 82px; }
 .features-section > .container { display: grid; grid-template-columns: .85fr 1.3fr; gap: 100px; }
 .section-intro h2, .account-section h2, .help-intro h2 { font-size: 30px; line-height: 1.5; letter-spacing: -.045em; margin: 12px 0 16px; }
@@ -63,18 +50,13 @@
 .feature-row p { font-size: 14px; line-height: 1.9; color: #505762; word-break: keep-all; }
 .feature-tag { display: inline-block; font-size: 10px; padding: 3px 8px; background: var(--color-subtle); border-radius: 4px; margin: 12px 4px 0 0; color: var(--color-muted); }
 .feature-row .feature-footnote { margin-top: 10px; font-size: 11px; color: var(--color-muted); }
-.demo-section { padding-block: 64px; border-bottom: 1px solid var(--color-border); scroll-margin-top: 82px; }
-.demo-intro { margin-bottom: 24px; }
-.demo-intro h2 { font-size: 30px; line-height: 1.5; letter-spacing: -.045em; margin: 12px 0 16px; }
-.demo-intro > p:last-child { font-size: 14px; line-height: 1.9; color: var(--color-muted); word-break: keep-all; }
-.demo-figure { margin: 0; }
-.demo-player { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--color-border); border-radius: var(--radius-panel); background: var(--color-text); }
+.demo-player { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--color-text); }
 .demo-player video { display: block; width: 100%; height: 100%; object-fit: contain; }
 .demo-player .demo-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; width: 72px; height: 72px; border: 2px solid #FFF; border-radius: 50%; background: var(--color-primary); color: #FFF; font-size: 26px; padding: 0 0 0 4px; }
 .demo-player .demo-play:hover { background: var(--color-red-hover); border-color: #FFF; }
 .demo-player .demo-play[hidden] { display: none; }
 .demo-player video:focus-visible { outline-offset: -4px; }
-.demo-figure figcaption, .demo-status { margin-top: 12px; font-size: 12px; line-height: 1.9; color: var(--color-muted); word-break: keep-all; }
+.demo-status { margin-top: 12px; font-size: 12px; line-height: 1.9; color: var(--color-muted); word-break: keep-all; }
 .demo-status:empty { display: none; }
 .account-section { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; padding-block: 72px; }
 .account-section h2 { font-size: 27px; }
@@ -125,11 +107,6 @@
   .hero { gap: 28px; }
   .hero-actions { gap: 15px; }
   .features-section > .container { gap: 45px; }
-  .preview-row { grid-template-columns: 128px minmax(0, 1fr); }
-  .preview-person { padding-left: 12px; gap: 6px; }
-  .is-current .preview-person { padding-left: 9px; }
-  .preview-person .avatar { width: 25px; height: 25px; font-size: 9px; }
-  .preview-row > p { padding: 12px; }
   .account-section, .help-section { gap: 45px; }
   .download-panel { gap: 30px; padding: 30px; }
 }
@@ -143,13 +120,8 @@
   .hero-description { font-size: 15px; }
   .desktop-break { display: none; }
   .unofficial { margin-top: 24px; }
-  .debate-preview { max-width: 540px; width: 100%; }
-  .preview-row { grid-template-columns: 135px minmax(0, 1fr); min-height: 78px; }
-  .preview-person { padding-left: 15px; }
-  .is-current .preview-person { padding-left: 12px; }
+  .hero-demo { max-width: 540px; width: 100%; scroll-margin-top: 140px; }
   .features-section { padding-block: 42px; scroll-margin-top: 140px; }
-  .demo-section { padding-block: 42px; scroll-margin-top: 140px; }
-  .demo-intro h2 { font-size: 27px; }
   .demo-player .demo-play { width: 56px; height: 56px; font-size: 20px; }
   .features-section > .container, .account-section, .download-panel, .help-section { grid-template-columns: 1fr; gap: 30px; }
   .section-intro h2, .account-section h2, .help-intro h2 { font-size: 27px; }
@@ -171,10 +143,4 @@
   .wordmark { font-size: 16px; }
   .hero h1 { font-size: 40px; }
   .hero-description { font-size: 14px; }
-  .preview-row { grid-template-columns: 113px minmax(0, 1fr); }
-  .preview-person { padding: 10px 6px 10px 9px; gap: 5px; }
-  .is-current .preview-person { padding-left: 6px; }
-  .preview-person .avatar { width: 23px; height: 23px; font-size: 8px; }
-  .preview-person strong { font-size: 11px; }
-  .preview-person small { font-size: 7px; }
 }

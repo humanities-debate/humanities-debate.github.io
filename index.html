@@ -47,14 +47,15 @@
         <p class="unofficial">SK하이닉스 비공식 면접 연습 서비스<br>공식 채용 서비스나 공식 평가 도구가 아닙니다.</p>
       </div>
 
-      <figure class="debate-preview" aria-label="설명을 위해 만든 4인 토론 화면 예시">
-        <div class="preview-heading"><span class="preview-label">토론 화면 예시</span><span class="preview-live">네 사람의 다른 관점</span></div>
-        <div class="preview-topic"><span>연습용 주제</span><h2>팀의 결정에 반대해도<br>함께 따라야 할까요?</h2></div>
-        <div class="preview-row"><div class="preview-person"><span class="avatar">나</span><strong>나<small>사용자</small></strong></div><p>새로운 문제가 보이면 다시 논의할 기회는 필요해요.</p></div>
-        <div class="preview-row"><div class="preview-person"><span class="avatar">지훈</span><strong>김지훈<small>AI · 논리형</small></strong></div><p>다시 논의할 기준을 정해 두면 실행도 덜 흔들릴 것 같습니다.</p></div>
-        <div class="preview-row is-current"><div class="preview-person"><span class="avatar">서연</span><strong>이서연<small>AI · 비판적 관점형</small></strong></div><p>그 기준 밖에서 생긴 문제는 누가 제기할 수 있나요?</p></div>
-        <div class="preview-row"><div class="preview-person"><span class="avatar">민수</span><strong>박민수<small>AI · 현실적 해결책형</small></strong></div><p>누구나 문제를 알리고, 팀이 계속할지 정하는 절차를 두죠.</p></div>
-        <figcaption>설명을 위해 작성한 가상 예시입니다. 실제 대화 기록이나 화면 캡처가 아닙니다.</figcaption>
+      <figure class="hero-demo" id="demo" aria-label="실제 프로그램 시연">
+        <div class="demo-player">
+          <video id="program-demo" controls playsinline muted preload="none" width="1920" height="1080" poster="./assets/demo-poster.png" aria-label="Humanities Debate 실제 프로그램 시연 영상" aria-describedby="demo-caption" tabindex="0">
+            <source src="./assets/Humanities-Debate-v1.0.0-demo.mp4" type="video/mp4">
+            이 브라우저에서는 영상을 재생할 수 없습니다. <a href="./assets/Humanities-Debate-v1.0.0-demo.mp4">시연 영상 파일 열기</a>
+          </video>
+          <button class="demo-play" type="button" aria-label="실제 프로그램 시연 영상 재생" aria-controls="program-demo" hidden><span aria-hidden="true">▶</span></button>
+        </div>
+        <figcaption id="demo-caption"><strong>실제 프로그램 시연 · 약 1분</strong><span>AI 3명과의 실제 토론, 사용자 질문, 100점 피드백까지 확인해보세요.</span><span class="demo-notice">대기 구간은 편집했으며, 사용자 발언은 텍스트 입력으로 시연했습니다. 무음 · 화면 자막 포함</span><p class="demo-status" data-demo-status role="status"></p></figcaption>
       </figure>
     </section>
 
@@ -67,21 +68,6 @@
           <article class="feature-row"><span class="feature-number">03</span><div><h3>내 발언을 근거로 돌아보기</h3><p>토론을 마치면 전체 발언을 다시 읽고 100점 만점 AI 피드백을 요청할 수 있습니다. 잘한 발언과 개선 예시를 확인하고, 같은 주제로 다시 연습해 보세요.</p><span class="feature-tag">전체 기록·백업</span><span class="feature-tag">일반·심층 분석</span><p class="feature-footnote">AI 평가에는 오류가 있을 수 있으며, 점수는 비공식 연습용 참고 지표입니다.</p></div></article>
         </div>
       </div>
-    </section>
-
-    <section class="demo-section container" id="demo" aria-labelledby="demo-title">
-      <div class="demo-intro"><p class="eyebrow">약 1분으로 살펴보기</p><h2 id="demo-title">실제 프로그램 시연</h2><p>AI 3명과의 실제 토론, 사용자 질문, 토론 종료 후 100점 피드백까지 확인해보세요.</p></div>
-      <figure class="demo-figure">
-        <div class="demo-player">
-          <video id="program-demo" controls playsinline preload="none" width="1920" height="1080" poster="./assets/demo-poster.png" aria-label="Humanities Debate 실제 프로그램 시연 영상" aria-describedby="demo-caption" tabindex="0">
-            <source src="./assets/Humanities-Debate-v1.0.0-demo.mp4" type="video/mp4">
-            이 브라우저에서는 영상을 재생할 수 없습니다. <a href="./assets/Humanities-Debate-v1.0.0-demo.mp4">시연 영상 파일 열기</a>
-          </video>
-          <button class="demo-play" type="button" aria-label="실제 프로그램 시연 영상 재생" aria-controls="program-demo" hidden><span aria-hidden="true">▶</span></button>
-        </div>
-        <figcaption id="demo-caption">실제 앱 화면을 녹화한 68초 영상입니다. 대기 구간은 편집했으며, 사용자 발언은 텍스트 입력으로 진행했습니다. 영상은 무음이며 화면 안에 설명 자막이 포함되어 있습니다.</figcaption>
-      </figure>
-      <p class="demo-status" data-demo-status role="status"></p>
     </section>
 
     <section class="account-section container" aria-labelledby="account-title">
